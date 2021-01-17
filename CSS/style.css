@@ -1,0 +1,24 @@
+/* header */
+header {
+    text-align: center;
+}
+
+header>h1 {
+    margin: 0;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: #998899;
+}
+
+/* Form */
+
+
+fieldset {
+    border: 0;
+
+}
+
+.contact label[for] {
+    display: block;
+}
