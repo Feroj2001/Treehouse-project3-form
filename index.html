@@ -16,28 +16,40 @@
         <p>
             Get the latest news on how your code is doing right in your inbox
         </p>
+        <hr id="thick">
+        <hr id="thin">
     </header>
-    <hr id="thick">
-    <hr id="thin">
+    
     <main>
         <form action="index.html" method="POST">
             <fieldset class="contact clearfix">
                 <legend>Contact information</legend>
+            <div>
                 <label for="name">Full Name:</label>
                 <input id="name" type="text" name="name" placeholder="Full Name" required>
-                
+            </div>
+
+            <div>
                 <label for="email">Email:</label>
                 <input id="email" type="email" name="email" placeholder="Email" required>
+            </div>
 
+            <div>
                 <label for="phone">Phone Number:</label>
                 <input id="phone" type="tel" name="phone" required>
+            </div>
 
+            <div>
                 <label for="adress">Street Adress:</label>
                 <input id="adress" type="text" name="adress" required>
+            </div>
 
+            <div>
                 <label for="city">City:</label>
                 <input id="city" type="text" name="city" required>
+            </div>
 
+            <div>
                 <label for="state">State:</label><br>
                 <select name="state" id="state" required>
                     <option value="AL">Alabama</option>
@@ -92,10 +104,11 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select><br>
-
+            </div>
+            <div>
                 <label  for="zip">Zip Code:</label>
                 <input  id="zip" type="number" name="zipcode">
-
+            </div>     
                 <hr id="bottom" class="clearfix">
             </fieldset>
 
@@ -127,13 +140,15 @@
                 </section>
             </fieldset>
 
-            <button type="submit">Sign up</button>
+            <div class="btn">
+                <button type="submit">Sign up</button>
+            </div>
         </form>
 
-        <footer>
-            <p>&copy; Copyright 2021 The Code Review</p>
-        </footer>
     </main>
+    <footer>
+        <p>&copy; Copyright 2021 The Code Review</p>
+    </footer>
 </body>
 
 </html>

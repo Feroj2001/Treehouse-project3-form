@@ -1,163 +1,164 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
+/* header */
 header>h1 {
-    text-transform: uppercase;
     text-align: center;
-    background-color: rgb(49, 41, 41);
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #867e69;
     color: white;
-    margin: 0;
-    padding: 2rem;
 }
 
 header>h2 {
     text-align: center;
+    margin-top: 2rem;
 }
 
 header>p {
     text-align: center;
-    font-weight: bold;
-    padding: 0 3rem;
-    color: rgb(114, 102, 102);
+    padding: 1rem;
 }
 
 /* hr */
 
 #thick {
-    max-width: 90%;
-    padding: .1rem;
-    background-color: rgb(37, 34, 34);
+    width: 95%;
+    height: .5rem;
+    background-color: black;
+    margin: 0 auto;
 }
 
 #thin {
-    max-width: 90%;
-    background: rgb(35, 30, 30);
-    margin-bottom: 1.5rem;
+    width: 95%;
+    background-color: black;
+    margin: 0 auto;
 }
 
 #bottom {
-    margin-top: 2rem;
+    margin: 2rem 0;
+    width: 95%;
     background-color: black;
 }
 
-/* main/form */
-input:focus {
-    color: tomato;
-}
-
-form {
-    margin: 0 .1rem;
-}
+/* Form/main */
 
 fieldset {
     border: none;
-    /*removing fieldset border*/
+    /*removes fieldset borders*/
 }
 
-.newsletter input[type="checkbox"]:target {
+form {
+    margin-left: .5rem;
+}
+
+.contact legend {
+    padding: 1rem 0;
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
-
-.contact>legend {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.contact input[type],
-.contact select[name="state"] {
-    width: 100%;
-    padding: 1rem;
-    border-radius: .4rem;
-    background-color: #ffffed;
-}
-
-.contact>label {
+.contact label {
     display: block;
-    margin: 1rem 0;
-    color: rgb(129, 125, 125);
+    padding: .8rem 0;
+    font-size: 1.2rem;
+    color: #73726c;
+}
+
+.contact input[type] {
+    width: 95%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background-color: #edebe6;
+}
+
+.contact input[type]:focus {
+    background-color: #add6f4;
+    font-size: 1rem;
+}
+
+/* contact select/oiption */
+
+.contact select {
+    width: 95%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background-color: #edebe6;
 }
 
 .contact label[for="state"] {
-    margin-top: 1rem;
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-select>option {
-    max-width: 60%;
-}
-
-.contact select[name="state"] {
-    width: 100%;
-    padding: 1rem;
-}
+/* -----contact select/option */
 
 .contact input[id="zip"] {
     width: 40%;
 }
 
+/* ending contact CSS */
 
-/* newsletter format */
 
-.news legend {
-    margin-bottom: 1rem;
+/*starting news/ format*/
+.news>legend {
+    padding-bottom: 1rem;
     font-size: 1.5rem;
 }
 
-.news>label,
-.format>label {
+.news>label {
     display: inline-block;
-    margin-bottom: 1rem;
-    color: rgb(129, 125, 125);
+    padding: .5rem 0;
 }
 
-#letter,
-#format,
-label[for="other"] {
-    font-size: 1.3rem;
+.news label[id="letter"] {
+    font-size: 1.2rem;
 }
 
-.format input[type],
-.news input[type] {
+.news input[type],
+.format input[type] {
     margin-right: .5rem;
 }
 
+.format>#format {
+    font-size: 1.5rem;
+}
+
+.format label {
+    display: inline-block;
+    padding: .5rem 0;
+}
+
+.format label[for="other"] {
+    font-size: 1.5rem;
+}
+
 .format>textarea {
-    width: 100%;
+    width: 95%;
     height: 5rem;
+    font-size: 1rem;
 }
 
 /* button */
-button {
-    width: 80%;
-    padding: 1rem;
+.btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     margin-top: 1rem;
-    margin-left: 2.5rem;
-    color: white;
-    font-size: 1rem;
+}
+
+button {
+    padding: 1rem;
     background-color: #4CAF50;
 }
 
-button:hover {
-    background-color: green;
-    cursor: pointer;
-}
 
 /* footer */
-
 footer {
+    margin-top: 1rem;
     text-align: center;
-    margin-top: 2rem;
     font-style: italic;
-}
-
-/* media */
-
-
-@media(min-width: 768px) {
-    label {
-        display: inline;
-    }
 }
