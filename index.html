@@ -17,28 +17,28 @@
             Get the latest news on how your code is doing right in your inbox
         </p>
     </header>
-    <hr>
-    <hr>
+    <hr id="thick">
+    <hr id="thin">
     <main>
         <form action="index.html" method="POST">
-            <fieldset class="contact">
+            <fieldset class="contact clearfix">
                 <legend>Contact information</legend>
-                <label for="name">Full Name</label>
+                <label for="name">Full Name:</label>
                 <input id="name" type="text" name="name" placeholder="Full Name" required>
                 
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="email" required>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Email" required>
 
-                <label for="phone">Phone Number</label>
+                <label for="phone">Phone Number:</label>
                 <input id="phone" type="tel" name="phone" required>
 
-                <label for="adress">Street Adress</label>
+                <label for="adress">Street Adress:</label>
                 <input id="adress" type="text" name="adress" required>
 
-                <label for="city">City</label>
+                <label for="city">City:</label>
                 <input id="city" type="text" name="city" required>
 
-                <label for="state">State</label>
+                <label for="state">State:</label><br>
                 <select name="state" id="state" required>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -91,19 +91,19 @@
                     <option value="WV">West Virginia</option>
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
-                </select>
+                </select><br>
 
-                <label for="zip">Zip Code</label>
-                <input id="zip" type="number" name="zipcode">
+                <label  for="zip">Zip Code:</label>
+                <input  id="zip" type="number" name="zipcode">
 
-                <hr>
+                <hr id="bottom" class="clearfix">
             </fieldset>
 
 
             <fieldset class="newsletter">
                 <section class="news">
-                    <legend>newsletter</legend>
-                    <label for="">Select the newsletters your would like to recieve</label><br>
+                    <legend>Newsletter</legend>
+                    <label id="letter" for="">Select the newsletters your would like to recieve:</label><br>
                     <input id="htmlnews" type="checkbox" name="HTMLnews">
                     <label for="htmlnews">HTML News</label><br>
                     
@@ -115,20 +115,24 @@
                 </section>
 
                 <section class="format">
-                    <label for="">Newsletter Format</label><br>
-                    <input id="html" type="radio" name="html">
+                    <label id="format" for="">Newsletter Format:</label><br>
+                    <input id="html" type="radio" name="html" value="html">
                     <label for="html">HTML</label><br>
                     
-                    <input id="plain" type="radio" name="plain">
+                    <input id="plain" type="radio" name="plain" value="plain">
                     <label for="plain">Plain text</label><br>
                     
-                    <label for="other">Other topics you'd like to hear about</label><br>
+                    <label for="other">Other topics you'd like to hear about?(optional)</label><br>
                     <textarea name="other" id="other" cols="10" rows=""></textarea>
                 </section>
             </fieldset>
 
             <button type="submit">Sign up</button>
         </form>
+
+        <footer>
+            <p>&copy; Copyright 2021 The Code Review</p>
+        </footer>
     </main>
 </body>
 

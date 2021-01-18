@@ -1,24 +1,163 @@
-/* header */
-header {
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+header>h1 {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(49, 41, 41);
+    color: white;
+    margin: 0;
+    padding: 2rem;
+}
+
+header>h2 {
     text-align: center;
 }
 
-header>h1 {
-    margin: 0;
-    padding: 2rem;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    background-color: #998899;
+header>p {
+    text-align: center;
+    font-weight: bold;
+    padding: 0 3rem;
+    color: rgb(114, 102, 102);
 }
 
-/* Form */
+/* hr */
 
+#thick {
+    max-width: 90%;
+    padding: .1rem;
+    background-color: rgb(37, 34, 34);
+}
+
+#thin {
+    max-width: 90%;
+    background: rgb(35, 30, 30);
+    margin-bottom: 1.5rem;
+}
+
+#bottom {
+    margin-top: 2rem;
+    background-color: black;
+}
+
+/* main/form */
+input:focus {
+    color: tomato;
+}
+
+form {
+    margin: 0 .1rem;
+}
 
 fieldset {
-    border: 0;
-
+    border: none;
+    /*removing fieldset border*/
 }
 
-.contact label[for] {
+.newsletter input[type="checkbox"]:target {
+    font-weight: bold;
+}
+
+
+.contact>legend {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.contact input[type],
+.contact select[name="state"] {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .4rem;
+    background-color: #ffffed;
+}
+
+.contact>label {
     display: block;
+    margin: 1rem 0;
+    color: rgb(129, 125, 125);
+}
+
+.contact label[for="state"] {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+select>option {
+    max-width: 60%;
+}
+
+.contact select[name="state"] {
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact input[id="zip"] {
+    width: 40%;
+}
+
+
+/* newsletter format */
+
+.news legend {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.news>label,
+.format>label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgb(129, 125, 125);
+}
+
+#letter,
+#format,
+label[for="other"] {
+    font-size: 1.3rem;
+}
+
+.format input[type],
+.news input[type] {
+    margin-right: .5rem;
+}
+
+.format>textarea {
+    width: 100%;
+    height: 5rem;
+}
+
+/* button */
+button {
+    width: 80%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    color: white;
+    font-size: 1rem;
+    background-color: #4CAF50;
+}
+
+button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+/* media */
+
+
+@media(min-width: 768px) {
+    label {
+        display: inline;
+    }
 }
