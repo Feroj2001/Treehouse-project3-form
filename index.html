@@ -7,6 +7,7 @@
     <title>Form</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/normalize.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,33 +25,34 @@
         <form action="index.html" method="POST">
             <fieldset class="contact clearfix">
                 <legend>Contact information</legend>
-            <div>
+
+            <div class="formBox">
                 <label for="name">Full Name:</label>
                 <input id="name" type="text" name="name" placeholder="Full Name" required>
             </div>
 
-            <div>
+            <div class="formBox">
                 <label for="email">Email:</label>
                 <input id="email" type="email" name="email" placeholder="Email" required>
             </div>
 
-            <div>
+            <div class="formBox">
                 <label for="phone">Phone Number:</label>
                 <input id="phone" type="tel" name="phone" required>
             </div>
 
-            <div>
+            <div class="formBox">
                 <label for="adress">Street Adress:</label>
                 <input id="adress" type="text" name="adress" required>
             </div>
 
-            <div>
+            <div class="formBox">
                 <label for="city">City:</label>
                 <input id="city" type="text" name="city" required>
             </div>
 
-            <div>
-                <label for="state">State:</label><br>
+            <div class="formBox">
+                <label for="state">State:</label>
                 <select name="state" id="state" required>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -103,18 +105,18 @@
                     <option value="WV">West Virginia</option>
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
-                </select><br>
+                </select>
             </div>
-            <div>
+
+            <div class="formBox">
                 <label  for="zip">Zip Code:</label>
                 <input  id="zip" type="number" name="zipcode">
-            </div>     
-                <hr id="bottom" class="clearfix">
+            </div>
             </fieldset>
-
+            <hr id="bottom" class="clearfix">
 
             <fieldset class="newsletter">
-                <section class="news">
+                <!-- <section class="news"> -->
                     <legend>Newsletter</legend>
                     <label id="letter" for="">Select the newsletters your would like to recieve:</label><br>
                     <input id="htmlnews" type="checkbox" name="HTMLnews">
@@ -125,10 +127,11 @@
                     
                     <input id="jsnews" type="checkbox" name="JSnews">
                     <label for="jsnews">Javascript News</label><br>
-                </section>
+                <!-- </section> -->
 
-                <section class="format">
+                <!-- <section class="format"> -->
                     <label id="format" for="">Newsletter Format:</label><br>
+                    
                     <input id="html" type="radio" name="html" value="html">
                     <label for="html">HTML</label><br>
                     
@@ -137,7 +140,7 @@
                     
                     <label for="other">Other topics you'd like to hear about?(optional)</label><br>
                     <textarea name="other" id="other" cols="10" rows=""></textarea>
-                </section>
+                <!-- </section> -->
             </fieldset>
 
             <div class="btn">

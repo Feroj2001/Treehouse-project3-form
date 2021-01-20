@@ -1,164 +1,170 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: light 300;
 }
 
 /* header */
-header>h1 {
+
+header {
     text-align: center;
+}
+
+header>h1 {
+    margin: 0;
+    padding: 2rem;
     text-transform: uppercase;
-    margin: 0 auto;
-    padding: 3rem;
-    background-color: #867e69;
     color: white;
+    background-color: rgb(48, 31, 5);
 }
 
 header>h2 {
-    text-align: center;
-    margin-top: 2rem;
+    margin: .5rem 0;
 }
 
 header>p {
-    text-align: center;
-    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0;
 }
 
 /* hr */
 
-#thick {
-    width: 95%;
-    height: .5rem;
+hr {
+    width: 90%;
     background-color: black;
     margin: 0 auto;
 }
 
-#thin {
-    width: 95%;
-    background-color: black;
-    margin: 0 auto;
+#thick {
+    margin: .5rem auto;
+    height: .2rem;
 }
 
 #bottom {
-    margin: 2rem 0;
-    width: 95%;
-    background-color: black;
+    margin: 1rem auto;
 }
 
-/* Form/main */
 
-fieldset {
-    border: none;
-    /*removes fieldset borders*/
-}
+/* form */
 
 form {
-    margin-left: .5rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+form>fieldset {
+    border: none;
 }
 
 .contact legend {
-    padding: 1rem 0;
+    padding: .8rem 0;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size: 1.3rem;
 }
 
-.contact label {
-    display: block;
-    padding: .8rem 0;
-    font-size: 1.2rem;
-    color: #73726c;
+.contact .formBox {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: .5rem 0;
+}
+
+.contact label[for] {
+    margin-bottom: .5rem;
 }
 
 .contact input[type] {
-    width: 95%;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: .5rem;
-    background-color: #edebe6;
 }
 
 .contact input[type]:focus {
-    background-color: #add6f4;
-    font-size: 1rem;
+    box-shadow: 5px 5px rgb(34, 33, 33);
+    color: limegreen;
 }
-
-/* contact select/oiption */
 
 .contact select {
-    width: 95%;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: .5rem;
-    background-color: #edebe6;
 }
-
-.contact label[for="state"] {
-    padding-bottom: 0;
-}
-
-/* -----contact select/option */
 
 .contact input[id="zip"] {
-    width: 40%;
+    width: 30%;
 }
 
-/* ending contact CSS */
+/* newsletter */
 
-
-/*starting news/ format*/
-.news>legend {
-    padding-bottom: 1rem;
+.newsletter>legend {
+    padding: .5rem 0;
     font-size: 1.5rem;
 }
 
-.news>label {
+.newsletter label[id="letter"],
+.newsletter label[id="format"],
+.newsletter label[for="other"] {
     display: inline-block;
     padding: .5rem 0;
-}
-
-.news label[id="letter"] {
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.news input[type],
-.format input[type] {
+.newsletter input[type="checkbox"],
+.newsletter input[type="radio"] {
     margin-right: .5rem;
+    margin-bottom: .8rem;
 }
 
-.format>#format {
-    font-size: 1.5rem;
+textarea {
+    padding: 2rem;
+    width: 80%;
+    border-radius: .5rem;
+    margin: 0 auto;
 }
 
-.format label {
-    display: inline-block;
-    padding: .5rem 0;
-}
-
-.format label[for="other"] {
-    font-size: 1.5rem;
-}
-
-.format>textarea {
-    width: 95%;
-    height: 5rem;
-    font-size: 1rem;
-}
-
-/* button */
 .btn {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-top: 1rem;
 }
 
 button {
+    background-color: lightgreen;
+    color: rgb(26, 18, 18);
     padding: 1rem;
-    background-color: #4CAF50;
+    width: 80%;
 }
 
+button:hover {
+    font-size: 2rem;
+    background-color: orange;
+    color: white;
+}
 
-/* footer */
 footer {
-    margin-top: 1rem;
+    margin: 0;
     text-align: center;
     font-style: italic;
+}
+
+/* media */
+
+@media(min-width: 768px) {
+
+    form {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact .formBox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact label {
+        margin-right: 9rem;
+    }
 }
