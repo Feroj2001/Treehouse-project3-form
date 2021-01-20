@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: light 300;
 }
 
 /* header */
@@ -134,17 +134,12 @@ button {
     background-color: lightgreen;
     color: rgb(26, 18, 18);
     padding: 1rem;
-    width: 80%;
-}
-
-button:hover {
-    font-size: 2rem;
-    background-color: orange;
-    color: white;
+    width: 50%;
 }
 
 footer {
     margin: 0;
+    padding: 2rem;
     text-align: center;
     font-style: italic;
 }
@@ -152,6 +147,13 @@ footer {
 /* media */
 
 @media(min-width: 768px) {
+
+    header h2,
+    header p,
+    header hr {
+        max-width: 50%;
+        margin: .5rem auto;
+    }
 
     form {
         max-width: 50%;
@@ -165,6 +167,27 @@ footer {
     }
 
     .contact label {
-        margin-right: 9rem;
+        flex-basis: 5rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-right: 5rem;
     }
+
+    .contact input {
+        width: 70%;
+    }
+
+    .contact select {
+        width: 70%;
+    }
+
+    .contact input[id="zip"] {
+        width: 20%;
+        margin-left: 0;
+    }
+
+    #bottom {
+        width: 100%;
+    }
+
 }
