@@ -81,8 +81,9 @@ form>fieldset {
 }
 
 .contact input[type]:focus {
-    box-shadow: 5px 5px rgb(34, 33, 33);
-    color: limegreen;
+    background-color: lightgray;
+    transition: background-color .50s ease-in;
+    color: tomato;
 }
 
 .contact select {

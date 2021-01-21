@@ -40,22 +40,22 @@
 
                 <div class="formBox">
                     <label for="phone">Phone Number:</label>
-                    <input id="phone" type="tel" name="phone" required>
+                    <input id="phone" type="tel" name="phone" placeholder="(975) 555 1234" required>
                 </div>
 
                 <div class="formBox">
                     <label for="adress">Street Adress:</label>
-                    <input id="adress" type="text" name="adress" required>
+                    <input id="adress" type="text" name="adress" placeholder="Your adress"  required>
                 </div>
 
                 <div class="formBox">
                     <label for="city">City:</label>
-                    <input id="city" type="text" name="city" required>
+                    <input id="city" type="text" name="city" placeholder="e.g. New Orleans" required>
                 </div>
 
                 <div class="formBox">
                     <label for="state">State:</label>
-                    <select name="state" id="state" required>
+                    <select name="state" id="state">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -112,7 +112,7 @@
 
                 <div class="formBox">
                     <label for="zip">Zip Code:</label>
-                    <input id="zip" type="text" name="zipcode" pattern="[0-9]{5}">
+                    <input id="zip" type="text" name="zipcode" placeholder="e.g. 27532" pattern="[0-9]{5}">
                 </div>
             </fieldset>
             <hr id="bottom" class="clearfix">
@@ -135,10 +135,10 @@
 
                 <label id="format" for="">Newsletter Format:</label><br>
 
-                <input id="html" type="radio" name="html" value="html">
+                <input id="html" type="radio" name="newsletter" value="html">
                 <label for="html">HTML</label><br>
 
-                <input id="plain" type="radio" name="plain" value="plain">
+                <input id="plain" type="radio" name="newsletter" value="plaintext">
                 <label for="plain">Plain text</label><br>
 
                 <label for="other">Other topics you'd like to hear about?(optional)</label><br>
